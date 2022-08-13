@@ -199,7 +199,7 @@ let input;
 			title: 'Opening in browser',
 			skip: () => !OPEN,
 			task: () => {
-				opn(url);
+				opn(url, {app: 'firefox'});
 			}
 		},
 		// Task 4: Download image to --location if not --open
